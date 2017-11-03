@@ -2,4 +2,4 @@
 *.temp
 
 # ignore tiedosto, onka nimi on täsmälleen joku
-build\
+build
