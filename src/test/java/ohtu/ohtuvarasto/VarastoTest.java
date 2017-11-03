@@ -29,18 +29,6 @@ public class VarastoTest {
         varastoNegTilavuusAlkusaldolla = new Varasto(-5, 4);
         varastoNegAlkusaldolla = new Varasto(3, -5);
     }
-    
-    @Test
-    public void otaVarastostaNegatiivisellaArvolla() {
-        varastoAlkusaldolla.otaVarastosta(-5);
-        assertEquals(4, varastoAlkusaldolla.getSaldo(), vertailuTarkkuus);
-    }
-    
-    @Test
-    public void getSaldoToimiiKunOtetaanSaldoaSuurempiMaara() {
-        varastoAlkusaldolla.otaVarastosta(6);
-        assertEquals(0, varastoAlkusaldolla.getSaldo(), vertailuTarkkuus);
-    }
 
     @Test
     public void konstruktoriLuoTyhjanVaraston() {
@@ -127,6 +115,18 @@ public class VarastoTest {
 
         // varastossa pitäisi olla tilaa 10 - 8 + 2 eli 4
         assertEquals(4, varasto.paljonkoMahtuu(), vertailuTarkkuus);
+    }
+    
+    @Test
+    public void otaVarastostaNegatiivisellaArvolla() {
+        varastoAlkusaldolla.otaVarastosta(-5);
+        assertEquals(4, varastoAlkusaldolla.getSaldo(), vertailuTarkkuus);
+    }
+    
+    @Test
+    public void getSaldoToimiiKunOtetaanSaldoaSuurempiMaara() {
+        varastoAlkusaldolla.otaVarastosta(6);
+        assertEquals(0, varastoAlkusaldolla.getSaldo(), vertailuTarkkuus);
     }
 
 }
