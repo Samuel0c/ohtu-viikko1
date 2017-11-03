@@ -3,3 +3,7 @@
 
 # ignore tiedosto, onka nimi on täsmälleen joku
 build
+
+/.nb-gradle/
+
+gradle.properties
