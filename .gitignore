@@ -1,0 +1,5 @@
+# ignore temp-päätteiset
+*.temp
+
+# ignore tiedosto, onka nimi on täsmälleen joku
+build\
