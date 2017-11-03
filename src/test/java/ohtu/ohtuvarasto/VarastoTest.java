@@ -52,7 +52,7 @@ public class VarastoTest {
     
     @Test
     public void konstruktoriAntaaTVarastonTilavuudenOikeinNegatiivisellaTilavuudella() {
-        assertEquals(0, varastoNegTilavuus.getTilavuus(), vertailuTarkkuus);
+        assertEquals(1, varastoNegTilavuus.getTilavuus(), vertailuTarkkuus);
     }
     
     @Test
