@@ -7,3 +7,4 @@ build
 /.nb-gradle/
 
 gradle.properties
+/NhlStatistics1/.nb-gradle/
