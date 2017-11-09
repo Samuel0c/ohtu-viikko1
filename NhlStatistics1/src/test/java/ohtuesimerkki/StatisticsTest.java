@@ -8,9 +8,6 @@ import org.junit.Test;
 
 public class StatisticsTest {
 
-    public StatisticsTest() {
-    }
-
     Reader readerStub = new Reader() {
 
         public List<Player> getPlayers() {
